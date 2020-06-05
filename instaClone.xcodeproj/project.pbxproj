@@ -15,6 +15,7 @@
 		6662D40F2485DC07005CC7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6662D40D2485DC07005CC7A0 /* LaunchScreen.storyboard */; };
 		6662D41A2485DC07005CC7A0 /* instaCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6662D4192485DC07005CC7A0 /* instaCloneTests.swift */; };
 		6662D4252485DC07005CC7A0 /* instaCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6662D4242485DC07005CC7A0 /* instaCloneUITests.swift */; };
+		D9EEA63131A8021D212D89A5 /* Pods_instaClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95A9077C1DA082AFB61C689 /* Pods_instaClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B4DA518F4EB01718689B00 /* Pods-instaClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaClone.release.xcconfig"; path = "Target Support Files/Pods-instaClone/Pods-instaClone.release.xcconfig"; sourceTree = "<group>"; };
 		6662D3FF2485DC05005CC7A0 /* instaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6662D4022485DC05005CC7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6662D4042485DC05005CC7A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		6662D4202485DC07005CC7A0 /* instaCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instaCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6662D4242485DC07005CC7A0 /* instaCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instaCloneUITests.swift; sourceTree = "<group>"; };
 		6662D4262485DC07005CC7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D94171426C4ECF9A8113077 /* Pods-instaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaClone.debug.xcconfig"; path = "Target Support Files/Pods-instaClone/Pods-instaClone.debug.xcconfig"; sourceTree = "<group>"; };
+		B95A9077C1DA082AFB61C689 /* Pods_instaClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EEA63131A8021D212D89A5 /* Pods_instaClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FD25D9B4F5301963C11D348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B95A9077C1DA082AFB61C689 /* Pods_instaClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6662D3F62485DC05005CC7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				6662D4182485DC07005CC7A0 /* instaCloneTests */,
 				6662D4232485DC07005CC7A0 /* instaCloneUITests */,
 				6662D4002485DC05005CC7A0 /* Products */,
+				823C8A9D3B2907BE9884CD35 /* Pods */,
+				3FD25D9B4F5301963C11D348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,16 @@
 			path = instaCloneUITests;
 			sourceTree = "<group>";
 		};
+		823C8A9D3B2907BE9884CD35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D94171426C4ECF9A8113077 /* Pods-instaClone.debug.xcconfig */,
+				05B4DA518F4EB01718689B00 /* Pods-instaClone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6662D4292485DC07005CC7A0 /* Build configuration list for PBXNativeTarget "instaClone" */;
 			buildPhases = (
+				33740A6F3FBFBC16AD3F9FD5 /* [CP] Check Pods Manifest.lock */,
 				6662D3FB2485DC05005CC7A0 /* Sources */,
 				6662D3FC2485DC05005CC7A0 /* Frameworks */,
 				6662D3FD2485DC05005CC7A0 /* Resources */,
+				18B11C5C27BCCB825A86CEEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B11C5C27BCCB825A86CEEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaClone/Pods-instaClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaClone/Pods-instaClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-instaClone/Pods-instaClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33740A6F3FBFBC16AD3F9FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instaClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6662D3FB2485DC05005CC7A0 /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		6662D42A2485DC07005CC7A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D94171426C4ECF9A8113077 /* Pods-instaClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +520,7 @@
 		};
 		6662D42B2485DC07005CC7A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B4DA518F4EB01718689B00 /* Pods-instaClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
